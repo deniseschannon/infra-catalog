@@ -9,7 +9,8 @@
         required: true
         default: "8090"
         description: This is the port that the Kubernetes API server should listen on.
-
+  maximum_rancher_version: v1.1.9999
+  
 kubernetes:
     health_check:
         request_line: GET /healthz HTTP/1.0
@@ -73,4 +74,3 @@ rancher-ingress-controller:
         response_timeout: 2000
         unhealthy_threshold: 3
         healthy_threshold: 2
-
